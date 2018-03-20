@@ -17,7 +17,7 @@ class SNTestSSView: ScreenSaverView {
 
 		let scene = SCNScene.init(named: "SaverMainScene.scn")
 
-		
+		 
 	}
 	
 	required init?(coder decoder: NSCoder) {
