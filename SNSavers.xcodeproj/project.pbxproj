@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED5E9C192060B0EE006CE616 /* SNSaversView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5E9C182060B0EE006CE616 /* SNSaversView.h */; };
-		ED5E9C1B2060B0EE006CE616 /* SNSaversView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5E9C1A2060B0EE006CE616 /* SNSaversView.m */; };
+		ED5E9C232060B120006CE616 /* SNTestSSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E9C222060B120006CE616 /* SNTestSSView.swift */; };
+		ED5E9C292060B304006CE616 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9C282060B303006CE616 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED5E9C152060B0EE006CE616 /* SNSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED5E9C182060B0EE006CE616 /* SNSaversView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSaversView.h; sourceTree = "<group>"; };
-		ED5E9C1A2060B0EE006CE616 /* SNSaversView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSaversView.m; sourceTree = "<group>"; };
 		ED5E9C1C2060B0EE006CE616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5E9C222060B120006CE616 /* SNTestSSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTestSSView.swift; sourceTree = "<group>"; };
+		ED5E9C282060B303006CE616 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +48,9 @@
 		ED5E9C172060B0EE006CE616 /* SNSavers */ = {
 			isa = PBXGroup;
 			children = (
-				ED5E9C182060B0EE006CE616 /* SNSaversView.h */,
-				ED5E9C1A2060B0EE006CE616 /* SNSaversView.m */,
 				ED5E9C1C2060B0EE006CE616 /* Info.plist */,
+				ED5E9C222060B120006CE616 /* SNTestSSView.swift */,
+				ED5E9C282060B303006CE616 /* art.scnassets */,
 			);
 			path = SNSavers;
 			sourceTree = "<group>";
@@ -62,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5E9C192060B0EE006CE616 /* SNSaversView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +97,7 @@
 				TargetAttributes = {
 					ED5E9C142060B0EE006CE616 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5E9C292060B304006CE616 /* art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5E9C1B2060B0EE006CE616 /* SNSaversView.m in Sources */,
+				ED5E9C232060B120006CE616 /* SNTestSSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,13 +248,18 @@
 		ED5E9C202060B0EE006CE616 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8Q82L44LS;
 				INFOPLIST_FILE = SNSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oz.osmoze.SNSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -261,13 +267,17 @@
 		ED5E9C212060B0EE006CE616 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z8Q82L44LS;
 				INFOPLIST_FILE = SNSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oz.osmoze.SNSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
